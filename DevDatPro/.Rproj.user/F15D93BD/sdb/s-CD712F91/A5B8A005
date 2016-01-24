@@ -1,0 +1,17 @@
+{
+    "contents" : "testDat<-read.csv(\"testResults.csv\")\n",
+    "created" : 1453672550170.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2790660218",
+    "id" : "A5B8A005",
+    "lastKnownWriteTime" : 1453476586,
+    "path" : "E:/DataScienceSpecialization/9_DevelopingDataProducts/Week4/test1/datarep.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

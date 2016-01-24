@@ -1,0 +1,17 @@
+{
+    "contents" : "---\ntitle       : Gage R&R Calculation\nsubtitle    : Developing Data Products - Coursera Specialization\nauthor      : Meny N.\njob         : Jan 24, 2016\nframework   : io2012        # {io2012, html5slides, shower, dzslides, ...}\nhighlighter : highlight.js  # {highlight.js, prettify, highlight}\nhitheme     : tomorrow      # \nwidgets     : []            # {mathjax, quiz, bootstrap}\nmode        : selfcontained # {standalone, draft}\nknit        : slidify::knit2slides\n---\n\n## The Course Project\n\nFor the final assignment, a Gage R&R calculator was programmed.\n\nGage R&R is a method used for Quality Methods, metrology and Testing measurements.\n\nIt is a statistical method to estimate the amount of variability induced in measurements by the measurement system itself, and compares it to the total variability observed in order to determine the variability of the measurement system.\n\nThe goal for this tool is to calculate and point out if a measurement system is capable for the job by having significant lower variation contribution in comparison to the natural process variation.\n\nIn the project case,there is an embedded file, trued data collected by the author. There were 3 testers used and 10 parts measured 3 times in each tester.\n\nThe intention is to show the user at this point what the tool is accomplishing.\n\n\n--- .class #id \n\n## Dataset Example\n\nHere is how the data needs to be set and collected:\n\n```{r,echo=FALSE}\ntestDat<-read.csv(\"E:/DataScienceSpecialization/9_DevelopingDataProducts/Week4/test1/testResults.csv\")\nhead(testDat[,1:7],15)\n```\n\n\n---.class #id\n\n## User Interface and Output\n\nThe user will choose the parameter of interest that was tested.\n\nIn the output there are 2 tabs:\n\n1. The ANOVA and Gage R&R output from actual results\n\n2. The tab with the relevant plots.\n\n---.class #id\n\n## Project Data\n\nAnova Gage R&R Tool links:\n\nGITHUB - [ui.R and server.R codes](https://github.com/Meny007/DevelopingDataProducts)\n\nGage R&R Tool - [LINK](https://menynh.shinyapps.io/gageRRcalc/)",
+    "created" : 1453668476739.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "847326099",
+    "id" : "3034458E",
+    "lastKnownWriteTime" : 1453674952,
+    "path" : "E:/DataScienceSpecialization/9_DevelopingDataProducts/Week4/test1/DevDatPro/test/index.Rmd",
+    "project_path" : "test/index.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

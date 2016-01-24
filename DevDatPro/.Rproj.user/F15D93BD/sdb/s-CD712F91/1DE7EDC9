@@ -1,0 +1,17 @@
+{
+    "contents" : "#This is the user interface where the user will choose the parameter of interest\nsource(\"datarep.R\",local=TRUE)\nshinyUI(fluidPage(\n  titlePanel(\"Gage R&R Calculation\"),\n    sidebarLayout(\n    sidebarPanel(\n      helpText(\"Choose parameter of interest\"),\n    \n      selectInput(inputId = \"var\",\n              label = \"Choose Parameter:\",\n              choices = c(colnames(testDat[,3:(ncol(testDat))])),\n              selected = colnames(testDat[3])),\n      h4(\"Quick Explanation\"),\n      p(\"The ANOVA Gage R&R is a statistical method to estimate the amount of variability induced in measurements by the measurement system itself, and compares it to the total variability observed in order to determine the variability of the measurement system\"),\n      \n      p(\"For the purpose of the project, the dataset has been sourced by the author of this routine (me), as this is real collected data. However, future version can include upload dataset by the user with the proper format\")\n    ),\n    \n    mainPanel(\n      tabsetPanel(\n        tabPanel(\"Gage R&R Summary\",verbatimTextOutput(\"sum\")),\n        tabPanel(\"Plot\",plotOutput(\"plot\",height = 750))\n      )\n    )\n  )\n))",
+    "created" : 1453671601943.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "136595688",
+    "id" : "1DE7EDC9",
+    "lastKnownWriteTime" : 1453664370,
+    "path" : "E:/DataScienceSpecialization/9_DevelopingDataProducts/Week4/test1/ui.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

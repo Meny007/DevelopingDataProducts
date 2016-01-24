@@ -1,0 +1,17 @@
+{
+    "contents" : "#server.R\n\nsource(\"datarep.R\",local=TRUE)\nlibrary(shiny)\nlibrary(qualityTools)\n# Define a server for the Shiny app\n\nshinyServer(function(input, output){\n  source(\"datarep.R\",local=TRUE)\n  # Fill in the spot we created for a plot\n  output$sum <-renderPrint({\n    source(\"datarep.R\",local=TRUE)\n    gdo = gageRRDesign(3,10, 3, method = \"crossed\",sigma=6,randomize = TRUE)\n    response(gdo)<-testDat[,input$var]\n    gdo<-gageRR(gdo)\n  })\n  output$plot<- renderPlot({\n    source(\"datarep.R\",local=TRUE)\n    gdo = gageRRDesign(3,10, 3, method = \"crossed\",sigma=6,randomize = TRUE)\n    response(gdo)<-testDat[,input$var]\n    gdo<-gageRR(gdo)\n    plot(gdo)})\n})",
+    "created" : 1453672501424.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3758802609",
+    "id" : "796A2E8",
+    "lastKnownWriteTime" : 1453477366,
+    "path" : "E:/DataScienceSpecialization/9_DevelopingDataProducts/Week4/test1/server.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
