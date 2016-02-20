@@ -2,7 +2,7 @@
 title       : Gage R&R Calculation
 subtitle    : Developing Data Products - Coursera Specialization
 author      : Meny N.
-job         : Jan 24, 2016
+job         : Feb 20, 2016
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -56,6 +56,6 @@ In the output there are 2 tabs:
 
 Anova Gage R&R Tool links:
 
-GITHUB - [ui.R and server.R codes](https://github.com/Meny007/DevelopingDataProducts)
+GITHUB - [ui.R and server.R codes](https://github.com/Meny007/Meny007.github.io)
 
 Gage R&R Tool - [LINK](https://menynh.shinyapps.io/gageRRcalc/)
